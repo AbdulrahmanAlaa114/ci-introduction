@@ -1,9 +1,12 @@
 name: Pull Request
 
 on:
+  push:
+    branches:
+      - ci-introduction
   pull_request:
     branches:
-      - develop
+      - ci-introduction
   workflow_dispatch:
 
 jobs:
